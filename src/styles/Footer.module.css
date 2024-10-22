@@ -1,0 +1,51 @@
+.footer{
+    background-color: #6083C2;
+   
+    width: 100%;
+    height: 230px;
+    margin-top: 50px;
+    
+}
+.footer__conteiner div{
+    justify-content: center;
+}
+
+.footer__conteiner
+{
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+    
+}
+p{
+    color: white;
+   
+}
+P:first-child
+{
+    margin-left: 10px;
+}
+p:last-child{
+    margin-right: 10px;
+}
+
+.span__container
+{
+    display: flex;
+    align-items: center;
+    margin: 0 5px
+}
+
+.mail
+{
+    width: 15px;
+    height: 15px;
+    padding-right: 5px;
+}
+.point
+{
+    width: 20px;
+    height: 20px;
+    padding-right: 5px;
+}

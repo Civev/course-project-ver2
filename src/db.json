@@ -1,0 +1,78 @@
+{
+    "posts": [
+        {
+            "id": "1",
+            "title": "Nvidia rtx 4060",
+            "type": "Видеокарта",
+            "description": "8 ГБ GDDR6, 1830 МГц / 2670 МГц, 3072sp, 24 RT-ядер, трассировка лучей, 128 бит, 2 слота, питание 8 pin, HDMI, DisplayPort",
+            "price": 1200,
+            "image": "https://algo.by/media_images/site/l/0/_/0_1203455.jpg"
+        },
+        {
+            "id": "2",
+            "title": "Radeon RX 580",
+            "type": "Видеокарта",
+            "description": "8 ГБ GDDR5, 1284 МГц, 2048sp, 256 бит, 2 слота, HDMI, DisplayPort",
+            "price": 437.80,
+            "image": "https://imgproxy.onliner.by/3g3Br6Ude-T3qvSCF68OlodPVeXkwjK3FhRu2PKUD1c/w:700/h:550/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2UvbGFyZ2Uv/NDJmODhiMjZlMTE0/M2QwZWY4ZjUxOThl/OTA2ZTM3ODUuanBl/Zw"
+
+        },
+        {
+            "id": "3",
+            "title": "Nvidia rtx 4090",
+            "type": "Видеокарта",
+            "description": "24 ГБ GDDR6X, 2230 МГц / 2520 МГц, 16384sp, 128 RT-ядер, трассировка лучей, 384 бит, 3.5 слота, питание 16 pin (PCIe Gen5), HDMI, DisplayPort",
+            "price": 4000,
+            "image": "https://oman.pcdubai.com/palit-geforce-rtx-4070-dual-12gb/images/product-main.webp"
+
+        },
+        {
+            "id": "4",
+            "title": "intel i3-12100f",
+            "type": "Процессор",
+            "description": "2022 г, Alder Lake, LGA1700, 4 ядра, 8 потоков, частота 4.3/3.3 ГГц, кэш 5 МБ + 12 МБ, техпроцесс 10 нм, TDP 89W",
+            "price": 200,
+            "image": "https://e.428.ua/img/3355906/3000/2000/protsessor_intel_core_i3-12100f_s-1700_3_3ghz_12mb_box_bx8071512100f~1546~1404.jpg"
+
+        },
+        {
+            "id": "5",
+            "title": "Nvidia rtx 4090",
+            "type": "Видеокарта",
+            "description": "24 ГБ GDDR6X, 2230 МГц / 2520 МГц, 16384sp, 128 RT-ядер, трассировка лучей, 384 бит, 3.5 слота, питание 16 pin (PCIe Gen5), HDMI, DisplayPort",
+            "price": 1200,
+            "image": "https://oman.pcdubai.com/palit-geforce-rtx-4070-dual-12gb/images/product-main.webp"
+        },
+        {
+            "id": "6",
+            "title": "Intel i5-12400f",
+            "type": "Процессор",
+            "description": "2022 г, Alder Lake, LGA1700, 6 ядер, 12 потоков, частота 4.4/2.5 ГГц, кэш 7.5 МБ + 18 МБ, техпроцесс 10 нм, TDP 117W",
+            "price": 369.00,
+            "image": "https://imgproxy.onliner.by/eNulszBZUbz5GSL8GIAbiZj02BXg-noKpppzqSiLwJc/w:700/h:550/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2UvbGFyZ2Uv/ZDJmZmYwMDRhYmVk/MmViZjg3YzRlOTAy/OWRlMDA2NTMuanBl/Zw"
+        },
+        {
+            "id": "7",
+            "title": "Kingston FURY PC4-25600",
+            "type": "Оперативная память",
+            "description": "32 ГБ, 2 модуля DDR4 DIMM по 16 ГБ, частота 3200 МГц, CL 16T, тайминги 16-18-18, напряжение 1.35 В",
+            "price": 250.05,
+            "image": "https://imgproxy.onliner.by/9wXdmYF30dlqFxTryGDGlIkHzrgAVCQPDO-MSpZwWmo/w:700/h:550/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2UvbGFyZ2Uv/ZjVjNTkxNjA5MzFk/NDg1MGM0ZjRiOWNi/NDMyOGI2YWUuanBl/Zw"
+        },
+        {
+           "id": "8",
+            "title": "SSD Kingston NV2",
+            "type": "SSD",
+            "description": "1 ТБ, M.2 2280, PCI Express 4.0 x4 (NVMe), последовательный доступ: 3500/2100 МБайт/с",
+            "price": 202.80,
+            "image": "https://imgproxy.onliner.by/ru061XB7-Fa5leGntnUS7LRUsL3lF5CkpBw1u2fTG3A/w:700/h:550/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2UvbGFyZ2Uv/MWIxNjcyODhmNDUx/ZmYyMDgyNzc5YTZm/NDdjYThlOTIuanBl/Zw" 
+        }
+    ],
+    "comments": [
+      { "id": "1", "text": "a comment about post 1", "postId": "1" },
+      { "id": "2", "text": "another comment about post 1", "postId": "1" }
+    ],
+    "profile": {
+      "name": "typicode"
+    }
+  }
