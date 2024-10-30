@@ -37,6 +37,7 @@ ul {
 li {
     float: left;
     padding-right: 60px;
+    margin: 0 45px 0 45px;
 }
 
 li a {

@@ -1,7 +1,9 @@
 import Contetn from "./components/Content";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import {Cart} from './components/Cart'
 import "./App.css"
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 
 
 
@@ -9,9 +11,16 @@ import "./App.css"
 function App() {
   return (
     <div className="App">
+      
+      <Router>
       <Header></Header>
-      <Contetn></Contetn>
-      <Footer></Footer>
+        <Routes>
+          <Route path="/" element={<Contetn/>}/>
+          <Route path="/cart" element={<Cart/>}/>
+        </Routes>
+      </Router>
+        <Footer></Footer>
+
     </div>
   );
 }

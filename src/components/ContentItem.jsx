@@ -1,10 +1,11 @@
 import styles from '../styles/Content.module.css'
 import { Card}  from '@mui/material'
 import {Paper} from '@mui/material'
-const ContentItem = ({title, price, description, image, type}) =>
+const ContentItem = ({title, price, description, image, type, Click}) =>
 {
     console.log(image)
     console.log(title)
+    
     return(
             <div className={styles.item_conteiner}>
             <Paper elevation={5} className={styles.item}>
@@ -14,8 +15,7 @@ const ContentItem = ({title, price, description, image, type}) =>
                 <p style={{color: "black", paddingLeft: "5px", fontSize: "18px"}}>{type}</p>
                 <div style={{fontSize: "18px", color: "black", height: "100px", paddingLeft: "7px", borderTop: "1px solid", borderBottom: "1px solid"}}>{description} </div>
                 <p className={styles.price} >{price} руб.</p>
-                
-                <div className={styles.button}>
+                <div className={styles.button} onClick={() => Click(title)}>
                     В корзину
                 </div>
             {/* </div> */}

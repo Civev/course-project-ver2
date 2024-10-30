@@ -7,7 +7,8 @@ import TextField from '@mui/material/TextField';
 import Slider from '@mui/material/Slider';
 import Checkbox from '@mui/material/Checkbox';
 import { Card } from '@mui/material';
-
+import {useDispatch, useSelector} from 'react-redux'
+import {addCart, cartReducer} from '../slices/listSlice'
 
 const Content = () => {
   const [items, setItems] = useState([]);
@@ -17,20 +18,34 @@ const Content = () => {
   const [price, setPrice] = useState([200, 4000]);
   const [priceField, setPriceField] = useState([200,4000])
   const minDistance = 300;
+  const dispatch = useDispatch();
+  console.log(useSelector(state => state.cart.cart))
   useEffect(() => {
     const fetchData = async () => {
       const response = await fetch("http://localhost:3000/posts");
-      if (!response.ok) {
-        throw new Error('Network response was not ok');
-      }
       const data = await response.json();
       setItems(data);
       setTemp(data);
     };
     fetchData();
   }, []);
+  const groupItemsByTitle = (noneGroped) => {
+    return noneGroped.reduce((acc, item) => {
+        const existingItem = acc.find(i => i.title === item.title);
 
-  console.log(items);
+        if (existingItem) {
+            existingItem.quantity += 1; 
+            existingItem.fullPrice = existingItem.quantity * existingItem.price;
+        } else {
+            acc.push({ ...item, quantity: 1, fullPrice: item.price }); 
+        }
+
+        return acc;
+    }, []);
+};
+
+
+  
 
   const changeCatalog = (event) => {
     const value = event.target.value.toLowerCase();
@@ -66,6 +81,16 @@ const Content = () => {
     });
     setTemp(filteredItems);
   };
+
+  const addToCart = (title) =>
+  {
+      const neededItem = items.filter(item => item.title === title);
+
+      groupItemsByTitle(neededItem)
+      
+      dispatch(addCart(neededItem[0]))
+  }
+
   const list = tempItems.map(item =>
 
     <ContentItem
@@ -75,6 +100,7 @@ const Content = () => {
       description={item.description}
       image={item.image}
       type={item.type}
+      Click={addToCart}
     />
   );
 
