@@ -169,7 +169,7 @@ const Content = () => {
             disableSwap
             min={200}
             max={4000}
-            sx={{ width: "205px", marginLeft: "16px" }}
+            sx={{ width: "265px", marginLeft: "16px" }}
             size='normal'
           />
 
