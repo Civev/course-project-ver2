@@ -46,9 +46,7 @@ li a {
     text-decoration: none;
 }
 
-/* li a:hover {
-    color: #111;
-} */
+
 
 .cart-icon {
     height: 40px;
@@ -66,8 +64,9 @@ li a {
     }
 
     nav {
+        justify-content: center;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
     }
 
     .headerList {
@@ -84,6 +83,7 @@ li a {
 
     .cart-icon {
         height: 30px;
+        width: 50%;
         margin-top: 10px;
     }
 }
@@ -92,7 +92,10 @@ li a {
     .header__logo {
         font-size: 18px;
     }
-
+    .cart-icon{
+        height: 30%;
+        width: 20000px;
+    }
     li a {
         font-size: 14px;
     }

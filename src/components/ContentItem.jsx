@@ -7,7 +7,7 @@ const ContentItem = ({title, price, description, image, type, Click}) =>
     console.log(title)
     
     return(
-            <div className={styles.item_conteiner}>
+            <div data-testid="ContentItemId" className={styles.item_conteiner}>
             <Paper elevation={5} className={styles.item}>
             {/* <div className={styles.item}> */}
                 <img style={{width: "150px", height: "120px", margin:"20px auto 0"}} src={image} alt="" />

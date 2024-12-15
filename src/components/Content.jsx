@@ -135,7 +135,7 @@ const Content = () => {
     filterItems(searchTerm, selectedTypes, newValue);
   }
   };
-
+  
   return (
     <div>
       <FormControl size='medium' fullWidth={true}>
@@ -169,7 +169,12 @@ const Content = () => {
             disableSwap
             min={200}
             max={4000}
-            sx={{ width: "265px", marginLeft: "16px" }}
+            sx={{
+              width: "265px",
+              marginLeft: "16px",
+              '@media (max-width: 480px)': { width: '340px' },
+              '@media (max-width: 768px)': { width: '315px' } 
+            }}
             size='normal'
           />
 

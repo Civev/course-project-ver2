@@ -33,16 +33,19 @@ import '../styles/about.css'
         <div style={{fontSize: "18px", marginBottom: "20px"}}>
         Мы всегда рады помочь вам создать компьютер вашей мечты!
         </div>
+        <div style={{display: 'flex', justifyContent: 'center'}}>
         <iframe
+            
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37635.362060574174!2d27.460623561813218!3d53.87469219628521!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbd01ccebda717%3A0x9f1aa3b1cb66790d!2z0JjQvdGC0LXRgNC90LXRgi3QvNCw0LPQsNC30LjQvSBLU1QuYnk!5e0!3m2!1sru!2sby!4v1732389280747!5m2!1sru!2sby"
-            width="100%"
-            height="600px"
-            style={{ border: 0 }}
+            width="50%"
+            height="450px"
+            style={{ border: 0, textAlign: "center" }}
             allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
             title="Google Map"
         ></iframe>
+        </div>
         </div>
         
     )
